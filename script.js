@@ -1,12 +1,18 @@
 
 function getData(){
+    
     let userName = document.getElementById("userName").value;
-    let userAge = document.getElementById("userAge").value;
-    alert(`Name: ${userName}\nAge: ${userAge}`)
+    let userAge = document.getElementById("userAge").value;  
+    let userCity = checkCity()
+    alert(`Name: ${userName}\nAge: ${userAge}\nCity: ${userCity}`)
 }
 
 function checkCity(){
-    let choice = document.getElementsByName("city").value
-    
-    alert(`Name: ${choice}`)
+    const city = "";
+    document.getElementsByName("city")
+    .forEach (radio => {
+        if(radio.checked){
+            alert(city)}}
+    )
 }
+
