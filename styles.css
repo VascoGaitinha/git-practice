@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Metal Mania";
+    border: 1px dotted rgb(255, 255, 255);
+}
+
+
+
+html{
+    background-image: url(bck.jpg);
+    background-size: cover;
+}
+
+h6{
+    text-align: center;
+    font-size: 4em;
+    
+    text-shadow: 1px 1px white;
+}
+
+.formContainer{
+    margin:0 auto;
+    margin-top: 50px;
+    width: fit-content;
+    
+    font-size: 2em;
+}
+
+.formContainer > div > input{
+width:100%;
+height: 33px;
+
+}
+
+
+
+
+.go{
+    margin: 0 auto;
+    padding:10px;
+    margin-top: 75px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 100%;
+    box-shadow: 0px 0px 25px whitesmoke;
+    width:fit-content;
+    
+       
+}
+
+.go > a{
+    text-decoration: none;
+    color:white; 
+    text-shadow: 3px 3px black;
+}
+
+.go:hover{
+    scale:1.5;
+}
