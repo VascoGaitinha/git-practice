@@ -7,23 +7,29 @@
     <div class="formContainer">
         <div class="q">
             <label> Name </label>
-            <input type="text" id="userName" ></input>
+            <input type="text" id="userName"></input>
         </div>
         <div class="q">
             <label> Age </label>
             <input type="number" id="userAge"></input>
         </div>
        <div>
-            <input type="radio" id="userCity"  value="Lisbon"></input>
+
             <label for="Lisbon">Lisboa</label>
-            <input type="radio" id="userCity" value="Beja"></input>
+            <input type="radio" id="userCity" name="city" value="Lisboa" checked="true"></input>
             <label for="Beja">Beja</label>
-            <input type="radio" id="userCity"  value="Sevilla"></input>
+            <input type="radio" id="userCity" name="city" value="Beja"></input>
             <label for="Sevilla">Sevilla</label>
+            <input type="radio" id="userCity" name="city" value="Sevilla"></input>
+            
         </div>
         <div class="go">
-            <button type="submit"  onclick="getData()">GO</button>
+            <a href="test.html" <button type="submit"  onclick="getData()">GO</button></a>
         </div>
+        <div class="go" >
+            <a href="test.html" <button type="submit"  onclick="checkCity()">Test</button></a>
+        </div>
+
 
     </div>
 </body>
