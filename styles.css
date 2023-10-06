@@ -1,54 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Metal+Mania&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
-    font-family: "Metal Mania";
-    /** border: 1px dotted rgb(255, 255, 255); **/
+    font-family: "Dosis";
+/*    border: 1px dotted rgb(255, 255, 255); */
+    text-shadow: 0.5px 0.5px white;
 }
-
-
 
 html{
     background-image: url(bck.jpg);
-    background-size: cover;
+    background-size: 100%;
 }
 
 h6{
     text-align: center;
     font-size: 4em;
-    
     text-shadow: 1px 1px white;
 }
 
+h5{
+    text-align: center;
+    font-size: 2.75em;
+    text-shadow: 1px 1px white;
+}
+
+h4{
+        text-align: center;
+        font-size: 2em;
+        text-shadow: 1px 1px white;
+}
+
+.mainContainer{
+    display: flex;
+}
+
 .formContainer{
-    margin:0 auto;
+    margin:0 auto 0 15%;
     margin-top: 50px;
-    width: fit-content;
+    width: 33%;
+    height: fit-content;
     font-size: 2em;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formContainer > div {
+    margin-top: 10px;
 }
 
 .formContainer > div > input{
-width:66%;
-height: 33px;
+    width:66%;
+    height: 33px;
+    }
 
+.radio{
+        display: flex;
+    }
+
+.otherContainer{
+    margin:0 12% 0 auto;
+    margin-top: 50px;
+    width: 33%;
 }
 
-
-
-
 .go{
-    margin: 0 auto;
+    font-size: 2.75em;
+    position:absolute;
+    margin: 435px auto 0 30%;
     padding:10px;
-    margin-top: 75px;
+    width:fit-content;
     text-align: center;
     border: 1px solid black;
     border-radius: 100%;
     box-shadow: 0px 0px 25px whitesmoke;
-    width:fit-content;
-    
-       
 }
 
 .go > a{
@@ -58,5 +85,16 @@ height: 33px;
 }
 
 .go:hover{
-    scale:1.5;
+    scale:1.1;
+}
+
+.genderForm > select{
+    font-size: 0.75em;
+}
+
+.skillsForm{
+    display: flex;
+    margin:0;
+    padding:0;
+    justify-content: left;
 }
