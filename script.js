@@ -7,11 +7,11 @@ function getData(){
     let userCity = checkCity()
     let userSkills = checkSkills()
     alert(`Please confirm submited data:\n\nName: ${userName1} ${userName2}\nAge: ${userAge}\nGender: ${userGender}\nCity: ${userCity}\nSkills: ${userSkills}`)
+
 }
 
 function checkCity(){    
    let cities
-
    document.getElementsByName("city")
     .forEach (radio => {
         if(radio.checked === true){
@@ -23,12 +23,19 @@ function checkCity(){
 }
 
 function checkGender(){
-    let gender ="ERROR"    
-    return gender
+    optionList = document.querySelector('#userGender');
+    selectedGender = optionList.options[optionList.selectedIndex].value;
+        return(selectedGender)
 }
 
 function checkSkills(){
-    let gender ="ERROR"    
-    return gender
-}
-
+    let skills = []
+    document.getElementsByName("userSkills")
+     .forEach (checkbox => {
+         if(checkbox.checked === true){
+            skills.unshift(checkbox.value)
+         }
+     }  
+     )
+     return skills    
+ }

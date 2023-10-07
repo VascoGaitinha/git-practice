@@ -14,7 +14,7 @@
             <input type="text" id="userName1" placeholder="First Name here"></input>
             <input type="text" id="userName2" placeholder="Last Name here"></input>
         </div>
-        <div class="q">
+        <div class="q x" >
             <label> Age </label>
             <input type="number" id="userAge"></input>
         </div>
@@ -29,17 +29,21 @@
 
         <div name="genderForm">
             <label>Gender</label>
-            <select name="userGender">
+            <select name="userGender" id="userGender">
+                <option selected="selected"> - Pick a gender - </option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
             </select>
         </div>
         <div>Skills</div>
-        <div class="skillsForm">
-            <input type="checkbox" value="HTML">HTML</input>
-            <input type="checkbox" value="CSS">CSS</input>
-            <input type="checkbox" value="JavaScript">JavaScript</input>
+        <div class="skillsForm" id="userSkills">
+            <input type="checkbox" name="userSkills" value="HTML ">HTML</input>
+            <input type="checkbox" name="userSkills" value="CSS ">CSS</input>
+            <input type="checkbox" name="userSkills" value="JavaScript ">JavaScript</input>
+            <input type="checkbox" name="userSkills" value="Revit ">Revit</input>
+            <input type="checkbox" name="userSkills" value="Autocad ">Autocad</input>
+            <input type="checkbox" name="userSkills" value="Sucky ">Sucky</input>
         </div>
     </div>
 
@@ -56,9 +60,10 @@
         <br>
         <h4>.... work still in progress</h4>
     </div>
-
-    <button onclick="checkGender()">GenderTest</button>
-</div>
+    </div>
+<!--  <div class ="testbutton"> 
+<button onclick="checkSkills()">.:TEST:.</button>
+</div> -->
 </body>
 </html>
 
