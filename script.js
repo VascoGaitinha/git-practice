@@ -5,9 +5,13 @@ function getData(){
     let userAge = document.getElementById("userAge").value;  
     let userGender = checkGender()
     let userCity = checkCity()
-    let userSkills = checkSkills()
-    alert(`Please confirm submited data:\n\nName: ${userName1} ${userName2}\nAge: ${userAge}\nGender: ${userGender}\nCity: ${userCity}\nSkills: ${userSkills}`)
-
+    let userSkills = checkSkills().reverse()
+    let dataList = [userName1 , userName2 , userAge, userGender, userCity, userSkills] 
+    
+    alert(`Please confirm submited data:\n\nName: ${userName1} ${userName2}\nAge: ${userAge}\nGender: ${userGender}\nCity: ${userCity}\nSkills: ${userSkills}\n\nCollected Inputs:  ${dataList.length}`)
+    
+    return dataList
+    
 }
 
 function checkCity(){    
@@ -39,3 +43,18 @@ function checkSkills(){
      )
      return skills    
  }
+
+ // LOCAL STORAGE TESTE
+ function exportList(){   
+    let xxx = getData()
+    let exportedList = []
+    for (i = 0 ; i<xxx.length; i++){
+        exportedList.unshift(xxx[i])   
+    }
+    output = exportedList.reverse()
+    alert (`exportedList: DONE!\nArray with ${output.length} length\n\nContent:\n\n${output}`)
+    return output
+}
+
+
+
